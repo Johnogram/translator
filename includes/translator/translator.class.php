@@ -48,7 +48,7 @@ class Translator {
      * 
      * If URL var is not set, or doesn't match available languages, fallback to default
      */
-    private function get_set_language() {
+    private function get_selected_language() {
 
         // Get available language for reference
         $available_lang = $this->set_the_languages();
@@ -104,7 +104,7 @@ class Translator {
         if ( empty( $string ) )
             return;
 
-        $language = $this->get_set_language();
+        $language = $this->get_selected_language();
 
         // Get the string
         $content = $this->get_json_contents( $language, $string );

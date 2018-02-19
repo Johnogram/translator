@@ -33,10 +33,10 @@
                 <nav class="tabs">
                     <div class="container">
                         <ul>
-                            <li><a href="/?lang=en">English</a></li>
-                            <li><a href="/?lang=fr">Francais</a></li>
-                            <li><a href="/?lang=de">Deutsch</a></li>
-                            <li><a href="/?lang=pirate">Pirate, argh!</a></li>
+                            <li><a href="?lang=en">English</a></li>
+                            <li><a href="?lang=fr">Francais</a></li>
+                            <li><a href="?lang=de">Deutsch</a></li>
+                            <li><a href="?lang=pirate">Pirate, argh!</a></li>
                         </ul>
                     </div>
                 </nav>
