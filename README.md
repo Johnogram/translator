@@ -1,1 +1,1 @@
-public
+Rough proof of concept
