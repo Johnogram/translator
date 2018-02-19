@@ -1,5 +1,7 @@
 <?php
     require_once("includes/init.php");
+
+    $translator = new Translator();
 ?>
 <!DOCTYPE html>
 <html>
@@ -31,10 +33,10 @@
                 <nav class="tabs">
                     <div class="container">
                         <ul>
-                            <li><a href="#">English</a></li>
-                            <li><a href="#">Francais</a></li>
-                            <li><a href="#">Deutsch</a></li>
-                            <li><a href="#">Pirate, argh!</a></li>
+                            <li><a href="/?lang=en">English</a></li>
+                            <li><a href="/?lang=fr">Francais</a></li>
+                            <li><a href="/?lang=de">Deutsch</a></li>
+                            <li><a href="/?lang=pirate">Pirate, argh!</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -47,14 +49,14 @@
         <!-- FORM -->
         <section class="section is-medium">
             <div class="container">
-                <h1 class="title">Welcome to our app!</h1>
-                <p style="margin-bottom: 1em;">Please fill in this form</p>
+                <h1 class="title"><?php $translator->_et( "HEADER" ); ?></h1>
+                <p style="margin-bottom: 1em;"><?php $translator->_et( "FORM_INTRO" ); ?></p>
                 <div class="field is-grouped">
                     <div class="control">
-                        <a href="#" class="button is-success">Next</a>
+                        <a href="#" class="button is-success"><?php $translator->_et( "NEXT_BUTTON" ); ?></a>
                     </div>
                     <div class="control">
-                        <a href="#" class="button is-warning">Submit</a>
+                        <a href="#" class="button is-warning"><?php $translator->_et( "SUBMIT_BUTTON" ); ?></a>
                     </div>
                 </div>
             </div>

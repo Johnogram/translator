@@ -8,7 +8,6 @@ var rename          = require('gulp-rename');
 var uglify          = require('gulp-uglify');
 
 var JS_FILES = [
-    'node_modules/js-cookie/src/js.cookie.js',
     'assets/js/script.js'
 ];
 
